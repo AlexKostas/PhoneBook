@@ -28,7 +28,7 @@ namespace PhoneBook.Data {
         }
 
         static string GetFormattedContactName(string nameToFormat) {
-            var formattedContactName = StringUtil.ClampStringAtLimits(nameToFormat, 0, maxNameLength);
+            var formattedContactName = StringUtil.ClampStringAtLimits(nameToFormat, 0, maxNameLength - 1);
             return formattedContactName.Trim();
         }
 
